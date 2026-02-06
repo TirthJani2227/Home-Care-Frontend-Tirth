@@ -1,0 +1,10 @@
+body {
+  overflow-y: hidden;
+}
+.object-fit-cover {
+  object-fit: cover;
+  background-color: gray;
+}
+.bw-image {
+  filter: grayscale(100%) brightness(0.9) contrast(0.9);
+}

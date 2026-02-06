@@ -1,0 +1,31 @@
+@import "../global.css";
+@import "/css/public/customer-public.css";
+
+body {
+    color: var(--color-text-light) !important;
+}
+
+.resend-otp {
+    background-color: var(--color-white) !important;
+    color: var(--primary-50) !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    border-color: var(--color-border-light);
+}
+
+.resend-otp:hover {
+    border-color: var(--color-border-light);
+}
+
+form {
+    max-width: 500px !important;
+}
+
+a {
+    color: var(--primary-50) !important;
+    font-weight: bold !important;
+}
+
+.font-size-form {
+    font-size: 14px !important;
+}

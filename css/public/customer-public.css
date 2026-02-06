@@ -1,0 +1,6 @@
+.button-purple {
+    background-color: var(--primary-50) !important;
+    color: var(--color-white) !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+}

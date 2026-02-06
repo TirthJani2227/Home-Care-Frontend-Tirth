@@ -1,0 +1,34 @@
+@import "../global.css";
+@import "/css/public/customer-public.css";
+
+body {
+    color: var(--color-text-light) !important;
+}
+
+form {
+    max-width: 500px !important;
+}
+
+a {
+    color: var(--primary-50) !important;
+    font-weight: bold !important;
+}
+
+.font-size-form {
+    font-size: 14px !important;
+}
+
+.or-line-through {
+    left: 12%;
+}
+
+.or-line-through span {
+    left: 35%;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999999;
+}
+
+.join-now {
+    font-size: 14px !important;
+}

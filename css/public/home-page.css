@@ -1,0 +1,440 @@
+@import "/css/global.css";
+@import "/css/public/customer-public.css";
+
+
+.main-container{
+    background-color: var(--color-background-light);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+/* Nav */
+.nav-color {
+    color: var(--color-text-light) !important;
+    size: 16px !important;
+}
+
+.toggler-style:focus {
+    border-color: #4540E1;
+    border-width: 1px;
+}
+
+/* Banner content */
+
+.main-line {
+    font-size: 48px;
+}
+
+.line-two {
+    font-size: 20px !important;
+    color: var(--color-text-light) !important;
+}
+
+.records {
+    font-size: 32px !important;
+    font-weight: bold !important;
+}
+
+.record-name {
+    font-size: 14px !important;
+}
+
+@media (max-width: 576px) {
+    .main-line {
+        font-size: 30px;
+    }
+
+    .line-two {
+        font-size: 16px;
+    }
+
+    .records {
+        font-size: 24px;
+    }
+
+    .record-name {
+        font-size: 10px;
+    }
+}
+
+.border-style {
+    border-color: var(--color-border-light);
+}
+
+.search-line {
+    color: var(--color-text-light) !important;
+    font-size: 18px !important;
+}
+
+.green-ball {
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #52BE6A !important;
+    transform: translate(-50%, -50%) !important;
+    top: 0% !important;
+    left: 30% !important;
+}
+
+.orange-ball {
+    height: 44px !important;
+    width: 44px !important;
+    background-color: #E18D40 !important;
+    transform: translate(-50%, -50%) !important;
+    top: 50%;
+    right: 0%;
+}
+
+.purple-ball {
+    height: 73px !important;
+    width: 73px !important;
+    background-color: #4540E1 !important;
+    transform: translate(-50%, -50%) !important;
+    bottom: 0%;
+    left: 5%;
+}
+
+.border-bottom {
+    color: var(--color-text-light) !important;
+}
+
+/* Carousel 1 */
+ 
+:root {
+    --primary: #4540E1;
+}
+ 
+/* Card styles */
+.customer_card {
+    height: 160px;
+    width: 225px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+}
+ 
+/* Carousel layout */
+#carouselExample {
+    position: relative;
+}
+ 
+.carousel-inner .d-flex {
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+ 
+/* Buttons */
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+ 
+#prevBtn {
+    left: -20px;
+    transform: rotate(180deg);
+    top: 20%;
+ }
+#nextBtn { right: -20px;
+    top: 30%;
+}
+ 
+/* Text */
+.service-title {
+    max-width: 167px;
+    margin: 8px auto 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 4px;
+}
+
+
+/* Text */
+.service-title {
+    max-width: 167px;
+    margin: 8px auto 0;
+    font-size: 16px;
+    font-weight: 400;
+    padding: auto;
+}
+
+/* Joinus */
+.join-main {
+    font-size: 35px;
+}
+
+.join-sub {
+    font-size: 16px;
+}
+
+.join-button {
+    font-size: 14px;
+    background-color: #FFB752;
+}
+
+.joinus {
+    background-color: #4540E1;
+    min-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .lg-position-relative {
+        position: relative;
+    }
+
+    .lg-position-absolute {
+        position: absolute;
+        right: -5%;
+        top: -40%;
+    }
+
+    .join-main {
+        font-size: 48px;
+    }
+
+    .join-sub {
+        font-size: 18px;
+    }
+}
+/* Footer Base */
+.footer {
+    background-color: #f5f5f5;
+  }
+  
+  .footer-padding {
+    padding-left: 7rem;
+    padding-right: 5rem;
+  }
+  
+  /* Text */
+  .footer-text {
+    font-size: 16px;
+  }
+  
+  .footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Lists */
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 0.75rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Logo */
+  #logo_image {
+    width: 162px;
+    max-width: 100%;
+  }
+  
+  /* Store badges */
+  .store-badge {
+    width: 120px;
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Social icons */
+  .social_media {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+  
+  /* Large screens */
+  @media (min-width: 1440px) {
+    .footer-text,
+    .footer-list li {
+      font-size: 20px;
+    }
+  
+    .footer-heading {
+      font-size: 24px;
+    }
+  }
+  
+  /* Tablets & below */
+  @media (max-width: 590px) {
+    .footer-padding {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  
+    .footer-text,
+    .footer-list li {
+      font-size: 14px;
+    }
+  }
+  
+  /* Small phones */
+  @media (max-width: 410px) {
+    .footer-padding {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    #copyright {
+      font-size: 13px;
+    }
+  }
+  
+
+  .btn {
+    background-color: #4540E1;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.fs-2 {
+    font-size: 32px !important;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.start-at {
+    color: #666666;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.card-heading {
+    height: 44px;
+}
+
+
+
+.scroll-wrapper {
+    position: relative;
+}
+
+.scroll-row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px 40px;
+}
+
+
+.scroll-row::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 37%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #DDE4EE;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 5px;
+}
+
+.scroll-btn.right {
+    right: 5px;
+}
+
+.service-card {
+    flex: 0 0 auto;
+    border-radius: 12px;
+    padding: 1px;
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+
+
+/* 5 cards */
+@media (min-width: 1200px) {
+    .service-card {
+        width: calc((100% - 64px) / 5);
+    }
+}
+
+/* 4 cards */
+@media (max-width: 1199px) {
+    .service-card {
+        width: calc((100% - 48px) / 4);
+    }
+}
+
+/* 3 cards */
+@media (max-width: 991px) {
+    .service-card {
+        width: calc((100% - 32px) / 3);
+    }
+}
+
+/* 2 cards */
+@media (max-width: 767px) {
+    .service-card {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media(max-width: 425px) {
+    .fs-2 {
+        font-size: x-large !important;
+    }
+
+    .card-btn {
+        font-size: small;
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+}
+
+.card-btn {
+    background-color: #fff;
+    color: #4540E1;
+    font-weight: 700;
+    border-color: #DDE4EE;
+}
+
+.right{
+    rotate: 180deg;
+    
+}.left{
+    
+    rotate: 180deg;
+}
+.service-svgs {
+    width: 64px;
+    height: 64px;
+    stroke: var(--color-border-light); /* Add stroke color */
+    stroke-width: 2; /* Add stroke width */
+    fill: none; /* Set fill to none for a strip effect */
+}
