@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/customer-public.css" />
+    <link rel="stylesheet" href="../css/home-page.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-white sticky-top border-bottom"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="">
+          <img src="../images/home/Logo.svg" height="40" alt="Logo" />
+        </a>
+        <!-- Hamburger Menu -->
+        <button
+          class="navbar-toggler toggler-style"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Tabs -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav align-items-center gap-md-4 py-3 py-md-0">
+            <li class="nav-item">
+              <a
+                href="/pages/public/home-page.html"
+                class="nav-link active nav-color"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link nav-color">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link nav-color">Contact Us</a>
+            </li>
+            <li class="nav-item mt-3 mt-md-0">
+              <button class="button-purple border-0 rounded-pill py-2 px-4">
+                Sign In
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container mt-md-3 mt-2">
+      <div class="row">
+        <!-- Content -->
+        <div
+          class="col-lg-6 d-lg-flex col-12 justify-content-center align-items-center mt-5"
+        >
+          <div>
+            <div class="w-75 fw-bold main-line text-start">
+              Home services at your doorstep
+            </div>
+            <div class="w-75 line-two text-start mt-2">
+              Your one-stop destination for home care.
+            </div>
+
+            <!-- Search button -->
+            <form class="mt-4">
+              <div class="input-group border border-style rounded-pill p-2">
+                <span class="input-group-text bg-white border-0">
+                  <img
+                    src="../images/home/MagnifyingGlass copy.svg"
+                    alt="Search icon"
+                  />
+                </span>
+                <input
+                  type="text"
+                  class="form-control border-0 search-line"
+                  placeholder="Search for 'AC Cleaning Service'"
+                />
+                <button class="btn button-purple rounded-pill px-4">
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <!-- Records -->
+            <div
+              class="d-flex justify-content-start align-items-center gap-3 mt-5"
+            >
+              <div>
+                <img src="../images/home/UsersThree.svg" alt="" />
+                <div class="records">5M+</div>
+                <div class="record-name">Customers Globally</div>
+              </div>
+              <div>
+                <img src="../images/home/GearSix.svg" alt="" />
+                <div class="records">500+</div>
+                <div class="record-name">Services</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Image -->
+        <div
+          class="col-lg-6 d-lg-flex d-none justify-content-end align-items-center mt-5"
+        >
+          <div class="position-relative d-inline-block">
+            <img
+              src="../images/home/home-page-4-images.svg"
+              class="me-4 img-fluid z-0"
+            />
+            <div class="green-ball rounded-circle position-absolute z-1"></div>
+            <div class="orange-ball rounded-circle position-absolute z-1"></div>
+            <div class="purple-ball rounded-circle position-absolute z-1"></div>
+          </div>
+        </div>
+
+        <!-- WHAT ARE YOU LOOKING FOR -->
+
+        <div class="container-fluid my-5 px-0">
+          <div
+            class="d-flex justify-content-center align-items-center mb-3 card-header"
+          >
+            <span class="fs-2 fw-bold">What are you looking for?</span>
+          </div>
+
+          <div class="scroll-wrapper">
+            <button id="serviceScrollLeft" class="scroll-btn left pb-1">
+              <img
+                src="../images/home/ArrowRight.svg"
+                class="flip-horizontal"
+              />
+            </button>
+
+            <div class="scroll-row" id="serviceRow">
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/makeup.svg" />
+                </div>
+                <span class="service-title">Women's Salon & Spa</span>
+              </div>
+
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/hair-gel.svg" />
+                </div>
+                <span class="service-title">Men's Salon & Massage</span>
+              </div>
+
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/air-conditioner.svg" />
+                </div>
+                <span class="service-title">AC & Appliance Repair</span>
+              </div>
+
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/cleaning.svg" />
+                </div>
+                <span class="service-title">Cleaning</span>
+              </div>
+
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/carpenter.svg" />
+                </div>
+                <span class="service-title">Electrician & Plumber</span>
+              </div>
+
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/paint-roller.svg" />
+                </div>
+                <span class="service-title">Painting & Waterproofing</span>
+              </div>
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/paint-roller.svg" />
+                </div>
+                <span class="service-title">Painting & Waterproofing</span>
+              </div>
+              <div class="service-available-card">
+                <div class="icon-box">
+                  <img src="../images/home/paint-roller.svg" />
+                </div>
+                <span class="service-title">Painting & Waterproofing</span>
+              </div>
+            </div>
+
+            <button id="serviceScrollRight" class="scroll-btn right pb-1">
+              <img src="../images/home/ArrowRight.svg" />
+            </button>
+          </div>
+        </div>
+
+        <!-- popular services -->
+
+        <div class="my-5">
+          <div
+            class="d-flex justify-content-between align-items-center mb-3 card-header px-2"
+          >
+            <span class="fs-2 fw-bold">Popular Services</span>
+            <button class="btn card-btn rounded-5">
+              See More
+              <img
+                src="../images/home/ArrowRight.svg"
+                alt=""
+                class="arrow-icon"
+              />
+            </button>
+          </div>
+
+          <div class="scroll-wrapper">
+            <button id="scrollLeft" class="scroll-btn left pb-1">
+              <img
+                src="../images/home/ArrowRight.svg"
+                alt=""
+                class="flip-horizontal"
+              />
+            </button>
+            <div class="scroll-row" id="cardRow">
+              <div class="service-card col d-flex flex-column gap-3 h-100">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start mt-auto">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3 h-100">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center">Washing </span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start mt-auto">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/image 9.svg" alt="" class="" />
+                <span class="card-title text-center"
+                  >Washing machine checkup</span
+                >
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$10</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+            </div>
+            <button id="scrollRight" class="scroll-btn right pb-1">
+              <img src="../images/home/ArrowRight.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- All services -->
+        <div class="my-5">
+          <div
+            class="d-flex justify-content-between align-items-center mb-3 mx-1 card-header"
+          >
+            <span class="fs-2 fw-bold">All Services</span>
+            <button class="btn card-btn rounded-5">
+              See More
+              <img
+                src="../images/home/ArrowRight.svg"
+                alt=""
+                class="arrow-icon"
+              />
+            </button>
+          </div>
+
+          <div class="scroll-wrapper">
+            <button id="scrollLeft_s" class="scroll-btn left pb-1">
+              <img
+                src="../images/home/ArrowRight.svg"
+                alt=""
+                class="flip-horizontal"
+              />
+            </button>
+            <div class="scroll-row" id="cardRow_s">
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+              <div class="service-card col d-flex flex-column gap-3">
+                <img src="../images/home/allserviceimg.svg" alt="" class="" />
+                <span class="card-title text-center">Tap Repairs</span>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-column align-items-start">
+                    <span class="start-at">Starts at</span>
+                    <span class="price">$40</span>
+                  </div>
+                  <button class="btn rounded-5 card-btn">+ Add</button>
+                </div>
+              </div>
+            </div>
+            <button id="scrollRight_s" class="scroll-btn right pb-1">
+              <img src="../images/home/ArrowRight.svg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Join Us -->
+        <div
+          class="my-5 pt-3 joinus w-100 rounded-4 d-flex justify-content-start align-items-center lg-position-relative ps-md-5 ps-3"
+        >
+          <div class="join-text p-3">
+            <div class="join-main text-white fw-bold">Want to Join Us?</div>
+            <div class="join-sub text-white fw-medium">
+              Become a service partner and Join 40,000+ partners across India.
+            </div>
+            <button
+              class="join-button text-black rounded-pill mt-4 fw-bold px-4 py-2 border-0"
+            >
+              Join Now
+            </button>
+          </div>
+
+          <img
+            class="z-1 lg-position-absolute d-lg-inline-block d-none px-3 py-2 px-lg-5"
+            src="../images/home/best-repair-service-online-support-portrait-professional-handyman-workwear-protective-gloves-sitting-crosslegged-with-laptop-showing-thumbs-up-like-sign-indoor-studio-shot-isolated 1.svg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid pt-5 pb-3">
+      <div class="container">
+        <div class="row" id="footer_top_div">
+          <div
+            class="col-xl-3 col-lg-2 col-12 d-flex justify-content-lg-start justify-content-center align-items-start mt-lg-0 mt-2 mb-4"
+          >
+            <img src="../images/home/Logo.svg" alt="" id="logo_image" />
+          </div>
+          <div class="col-lg col-md col-7 mb-md-0 mb-4">
+            <div class="row fw-bold mb-3 footer-text-heading">Company</div>
+            <a class="row mb-3 footer-text">About Us</a>
+            <a class="row mb-3 footer-text">Terms and Condition</a>
+            <a class="row mb-3 footer-text">Privacy Policy</a>
+            <a class="row footer-text">Careers</a>
+          </div>
+          <div class="col-lg col-md col-5 mb-md-0 mb-4">
+            <div class="row fw-bold mb-3 footer-text-heading">
+              For Customers
+            </div>
+            <a class="row mb-3 footer-text">Reviews</a>
+            <a class="row mb-3 footer-text">Categories</a>
+            <a class="row mb-3 footer-text">Blogs</a>
+            <a class="row footer-text">Contact Us</a>
+          </div>
+          <div class="col-lg col-md col-7">
+            <div class="row fw-bold mb-3 footer-text-heading">
+              For Professionals
+            </div>
+            <a class="row footer-text">Become a Service Partner</a>
+          </div>
+          <div class="col-xl-1 col-md-2 col-5">
+            <div class="row fw-bold mb-3 footer-text-heading">Download</div>
+            <img
+              class="row mb-3 icon footer-text"
+              src="../images/home/download-on-the-app-store-apple-logo-svgrepo-com.svg"
+              alt=""
+            />
+            <img
+              class="row icon footer-text"
+              src="../images/home/google-play-badge-logo-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="row" id="footer_bottom_div">
+          <div class="col-xl-11 col-md-10 col-7 px-0 d-flex">
+            <div class="align-items-center d-flex footer-text px-lg-3 px-0">
+              <span id="copyright">&copy; Copyright 2026 HomeCare</span>
+            </div>
+          </div>
+          <div
+            class="col-xl-1 col-md-2 col-5 d-flex align-items-center p-0 social_media_div"
+          >
+            <div class="p-0 m-0 d-flex justify-content-center social_media">
+              <img src="../images/home/FacebookLogo.svg" alt="" />
+            </div>
+            <div class="p-0 m-0 d-flex justify-content-center social_media">
+              <img src="../images/home/InstagramLogo.svg" alt="" />
+            </div>
+            <div class="p-0 m-0 d-flex justify-content-center social_media">
+              <img src="../images/home/LinkedinLogo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/public/home-page.js"></script>
+  </body>
+</html>

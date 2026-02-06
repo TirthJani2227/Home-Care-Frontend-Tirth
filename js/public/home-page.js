@@ -1,63 +1,64 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.querySelector(".carousel-inner .d-flex");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  nextBtn.addEventListener("click", () => {
-    container.appendChild(container.firstElementChild);
-  });
-
-  prevBtn.addEventListener("click", () => {
-    container.prepend(container.lastElementChild);
-  });
-});
-
-
-
-const row2 = document.getElementById("cardRow2");
-const scrollRight2 = document.getElementById("scrollRight2");
-const scrollLeft2 = document.getElementById("scrollLeft2");
-
-function getCardWidth() {
-    const card = row2.querySelector(".customer_card");
+/* ---------- Services Available ---------- */
+const row_s = document.getElementById("serviceRow");
+const scrollRight_s = document.getElementById("serviceScrollRight");
+const scrollLeft_s = document.getElementById("serviceScrollLeft");
+ 
+function getCardWidth(rowEl, cardClass) {
+    const card = rowEl.querySelector(cardClass);
     const gap = 16;
     return card.offsetWidth + gap;
 }
-
-scrollRight2.addEventListener("click", () => {
-    row2.scrollBy({
-        left: getCardWidth(),
-        behavior: "smooth"
-    });
-});
-
-scrollLeft2.addEventListener("click", () => {
-    row2.scrollBy({
-        left: -getCardWidth(),
-        behavior: "smooth"
-    });
-});
-
-const row_s = document.getElementById("cardRow_s");
-const scrollRight_s = document.getElementById("scrollRight_s");
-const scrollLeft_s = document.getElementById("scrollLeft_s");
-
-function getCardWidth_s() {
-    const card = row2.querySelector(".service-card");
-    const gap = 16;
-    return card.offsetWidth + gap;
-}
-
+ 
 scrollRight_s.addEventListener("click", () => {
     row_s.scrollBy({
-        left: getCardWidth_s(),
+        left: getCardWidth(row_s, ".service-available-card"),
         behavior: "smooth"
     });
 });
-
+ 
 scrollLeft_s.addEventListener("click", () => {
     row_s.scrollBy({
-        left: -getCardWidth_s(),
+        left: -getCardWidth(row_s, ".service-available-card"),
         behavior: "smooth"
     });
 });
+ 
+ 
+const row = document.getElementById("cardRow");
+const scrollRight = document.getElementById("scrollRight");
+const scrollLeft = document.getElementById("scrollLeft");
+ 
+scrollRight.addEventListener("click", () => {
+    row.scrollBy({
+        left: getCardWidth(row,".service-card"),
+        behavior: "smooth"
+    });
+});
+ 
+scrollLeft.addEventListener("click", () => {
+    row.scrollBy({
+        left: -getCardWidth(row,".service-card"),
+        behavior: "smooth"
+    });
+});
+ 
+ 
+const row_service = document.getElementById("cardRow_s");
+const scrollRight_service = document.getElementById("scrollRight_s");
+const scrollLeft_service = document.getElementById("scrollLeft_s");
+ 
+ 
+scrollRight_service.addEventListener("click", () => {
+    row_service.scrollBy({
+        left: getCardWidth(row_service,'.service-card'),
+        behavior: "smooth"
+    });
+});
+ 
+scrollLeft_service.addEventListener("click", () => {
+    row_service.scrollBy({
+        left: -getCardWidth_s(row_service,'.service-card'),
+        behavior: "smooth"
+    });
+});
+ 
